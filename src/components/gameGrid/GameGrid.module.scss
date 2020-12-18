@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: #bbada0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+}
+.cell,
+.cellTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cdc0b5;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 50px;
+  font-weight: bolder;
+
+  color: white;
+}
+
+.number-2 {
+  background-color: #eee4da;
+  color: #776e65;
+}
+.number-4 {
+  background-color: #eee1c9;
+  color: #776e65;
+}
+
+.number-8 {
+  background-color: #f3b27a;
+}
+
+.number-16 {
+  background-color: #f69664;
+}
+
+.number-32 {
+  background-color: #f57b5f;
+}
+
+.number-64 {
+  background-color: #f45e3b;
+}
+
+.number-128 {
+  background-color: rgb(237, 207, 114);
+}
+
+.number-256 {
+  background-color: rgb(237, 204, 94);
+}
+
+.number-512 {
+  background-color: rgb(237, 200, 80);
+}
+
+.number-1024 {
+  background-color: rgb(237, 194, 46);
+}
+
+.newNumber {
+  animation: newNum 0.2s linear;
+  @keyframes newNum {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+.ddd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(64, 224, 208, 0.021);
+  width: 500px;
+  height: 500px;
+}
+
+.gameOver {
+  color: #776e65;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(253, 253, 253, 0.541);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.gameOver div {
+  margin-bottom: 30px;
+}
+
+.gameOver button {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  outline: none;
+  color: #f9f5ea;
+  background-color: #8f7a66;
+  border: none;
+}
